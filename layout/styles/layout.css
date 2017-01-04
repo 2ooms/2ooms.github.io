@@ -291,6 +291,11 @@ h1, h2, h3, h4, h5, h6, .heading{color:#242424; border-color:inherit;}
 .row6{color:#FFFFFF; background-color:#14879c;}
 .row6 a{color:#14879c; background-color:#FFFFFF;}
 
+/* CTA - Call To Action */
+#header {
+	
+	background-color: black;
+}
 
 /* CTA - Call To Action */
 #cta .heading{color:inherit;}
@@ -301,6 +306,9 @@ h1, h2, h3, h4, h5, h6, .heading{color:#242424; border-color:inherit;}
 .latest a.overlay::before{background-color:rgba(0,0,0,.5);}
 .latest a.overlay::after{color:#FFFFFF; background-color:#14879c;}
 
+/* Header */
+.black {background-color: black;}
+#header .row1, #header .row1 a {color: white; background-color: black}
 
 /* Footer */
 #footer .title{border-color:#EBEBEB;}
