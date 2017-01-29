@@ -59,6 +59,8 @@
 
 /* NAVIGATION SECTION ########################################################################## */
 
+
+
 .navigation, .navigation .top-bar, .navigation ul, .navigation ul a {
 	background-color: black;
 	color: white;
@@ -133,7 +135,7 @@
 .main {
 	background-color: black;
 	color: white;
-	padding: 40px 0 50px 0;
+	padding: 40px 0 40px 0;
 	#mixes {
 		font-family:Verdana, Geneva, sans-serif;
 
@@ -211,7 +213,7 @@
 
 #audio-player .slider {
 	margin-bottom: 1.5rem;
-	margin-top: 1.0rem;
+	margin-top: 1.5rem;
 }
 /*
 input#volume {
@@ -302,7 +304,7 @@ input#volume::-webkit-slider-thumb{
 
 
 #playlist-button {
-	margin-top: 20px; 
+	margin: 20px 0; 
 	.pull-me {
 		/*display:block;*/
 		margin: auto;
@@ -324,6 +326,11 @@ input#volume::-webkit-slider-thumb{
 	border-radius: 0px;
 	border-color: #1779ba;
 	border-width: 2px;
+	margin-bottom: 0px;
+	}
+	hr {
+		margin: 0;
+		border-color: #1779ba;
 	}
 }
 
@@ -331,6 +338,7 @@ input#volume::-webkit-slider-thumb{
 #footer {
 	background-color: black;
 	color: #1779ba;
+	margin: 0px 0;
 	li {
 		display: inline-block;
 		margin-right: 20px;
