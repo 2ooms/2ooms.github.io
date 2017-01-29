@@ -80,6 +80,7 @@
 .navigation .top-bar-title {
 	display:block; margin:0 auto;
 	padding: 12px 16px 12px 16px;
+	margin-top: 0.4rem;
 }
 
 .navigation .top-bar-title button {
@@ -138,7 +139,6 @@
 	padding: 40px 0 40px 0;
 	#mixes {
 		font-family:Verdana, Geneva, sans-serif;
-
 		h2 {
 			text-align: center;
 			margin-bottom: 10px;
@@ -153,6 +153,9 @@
 			border-width: 0 0 1px 0;
 			border-color: white;
 			margin-bottom: 10px;
+		}
+		.cd {
+			margin-top: 10px;
 		}
 		li {
 			font-size: 10px;
