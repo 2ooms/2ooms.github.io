@@ -61,7 +61,7 @@
 
 
 
-.navigation, .navigation .top-bar, .navigation ul, .navigation ul a {
+.navigation, .navigation .top-bar, .navigation ul, .navigation ul a, .navigation a {
 	background-color: black;
 	color: white;
 	border-top-color: white;
@@ -348,6 +348,92 @@ input#volume::-webkit-slider-thumb{
 		float: right;
 	}
 }
+
+/* DRUM AND BASE SECTION ############################################################################## */
+.drumnbass {
+	max-width: 978px;
+	li {
+		font-size: 10px;
+		font-family:Verdana, Geneva, sans-serif;
+		padding-left: 0px;
+		a {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			color: white;
+			background-color: transparent;
+			z-index: 9999;
+		}
+		div {
+			padding: 0px;
+		}
+	}
+	h1 {
+		margin-bottom: 30px;
+	}
+	#pause {
+		display: hidden;
+	}
+	.slider-dnb .columns{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	section {
+		text-align: center;
+	}
+	.button-group {
+		width: 125%;
+		.expanded {
+			display: inline-block;
+			box-sizing: auto;
+			height: auto;
+			.button {
+				display: inline-block;
+			}
+		}
+	}
+	#dnb-tracks {
+		margin-top: 25px;
+		thead, th, thead tr {
+			color: white;
+			text-align: center;
+			background-color: #1779ba;
+		}
+		tr {
+			/*background-color: #1779ba;*/
+			color: #1779ba;
+			ul {
+				margin: 0px;
+			}
+		}
+		td {
+			padding: 2px 4px;
+			font-size: 13px;
+		}
+		button {
+			border-radius: 5px;
+			padding: 3px 5px;
+			margin: 2px 0px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: white;
+			background-color: #1779ba;
+			color: white;
+			font-size: 14px;
+		}
+		.center {
+			text-align: center;
+		}
+		ul {
+			display: none;
+		}
+	}
+}
+
 
 
 

@@ -21,7 +21,7 @@
 
     <div class="top-bar" id="example-animated-menu" data-animate="hinge-in-from-top spin-out">
       <div class="top-bar-title">
-        <strong class="logo">Steven 2me</strong>
+        <strong class="logo"><a href="../index.html">Steven 2me</a></strong>
       </div>
       <div id="responsive-menu">
         <div class="top-bar-left">
@@ -29,11 +29,7 @@
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
             <li>
-              <a href="#">Drum N Bass</a>
-              <ul class="menu vertical">
-                <li><a href="pages/drumnbass.html">Agressive</a></li>
-                <li><a href="#">Chill</a></li>
-              </ul>
+              <a href="pages/drumnbass.html">Drum N Bass</a>
             </li>
             
             <li>
@@ -79,163 +75,283 @@
 
   <!-- MAIN SECTION ################################################################################ -->
 
-
   <div class="main">
-    <div id="mixes">
-      <section>
-        <h2>MIXES</h2>
-      </section>
-      <div class="row">
-        
+    <div class="row drumnbass">
+    <section>
+      <h1>DrumNBass</h1>
+    </section>
+  
+  <!--AUDIO PLAYER ################################################################################ -->
 
-        <!-- HYPERION TRACKS AND AUDIO ################################################################################ -->
+      <div class="small-4 columns">
+        <div id="dnb-audio-player">  
+          <div class="row">
+            <div id="audio-player">
+              <div class="row clear clarfix slider-dnb">
+                <div class="small-12 columns">
+                  <div class="slider" data-slider data-initial-start="5" data-end="10">
+                    <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                    <input id="volume" type="hidden" min="0" max="10" value="5">
+                  </div>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="expanded button-group">
+                  <a id="prev" class="button"><i class="fa fa-fast-backward fa-2x"></i></a>
+                  <a id="play" class="button"><i class="fa fa-play fa-2x"></i></a>
+                  <a id="pause" class="button"><i class="fa fa-pause fa-2x"></i></a>
+                  <a id="stop" class="button"><i class="fa fa-stop fa-2x"></i></a>
+                  <a id="next" class="button"><i class="fa fa-fast-forward fa-2x"></i></a>
+                </div>
+              </div>
 
-        <div class="medium-4 columns">
-          <h4>HYPERION - 2005</h4>
-          <!-- <h5>Break Beats</h5> -->
-          <img id="hyperion-image" class="playlist-image" src="https://s3-us-west-1.amazonaws.com/steven2me.com/Images/hyperion.jpg" class="thumbnail" alt="hyperion">
-          <ul id="hyperion-playlist">
-            <li song="Push" cover="hyperion.jpg" artist="Lusine" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/01+Lusine+-+Push.mp3">Lusine - Push</li>
-            <li song="The Unthinkable (Habersham's Mah Sivve Mix)" cover="hyperion.jpg" artist="Pat Foosheen" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/02+Pat+Foosheen+-+The+Unthinkable+(Habersham%27s+Mah+Sivve+Mix).mp3">Pat Foosheen - The Unthinkable (Habersham's Mah Sivve Mix)</li>
-            <li song="Raincry (Koma & Bones Remix)" cover="hyperion.jpg" artist="God Within" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/03+God+Within+-+Raincry+(Koma+%26+Bones+Remix).mp3">God Within - Raincry (Koma & Bones Remix)</li>
-            <li song="Eye For An Eye (Force Mass Motion vs Dylan Rhymes Remix)" cover="hyperion.jpg" artist="Unkle" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/04+Unkle+-+Eye+For+An+Eye+(Force+Mass+Motion+vs+Dylan+Rhymes+Remix).mp3">Unkle - Eye For An Eye (Force Mass Motion vs Dylan Rhymes Remix)</li>
-            <li song="Cafe Del Mar (Hybrid's Time Traveller Remix)" cover="hyperion.jpg" artist="Energy 52" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/05+Energy+52+-+Cafe+Del+Mar+(Hybrid%27s+Time+Traveller+Remix).mp3">Energy 52 - Cafe Del Mar (Hybrid's Time Traveller Remix)</li>
-            <li song="Lovehate Breaks" cover="hyperion.jpg" artist="Deibeat" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/06+Deibeat+-+Lovehate+Breaks.mp3">Deibeat - Lovehate Breaks</li>
-            <li song="Go" cover="hyperion.jpg" artist="Andy Hunger" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/07+Andy+Hunger+-+Go.mp3">Andy Hunter - Go</li>
-            <li song="Symmetry" cover="hyperion.jpg" artist="Apex" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/08+Apex+-+Symmetry.mp3">Apex - Symmetry.mp3</li>
-            <li song="Reign (Evil 9 Mix)" cover="hyperion.jpg" artist="Unkle" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/09+Unkle+-+Reign+(Evil+9+Mix).mp3">Unkle - Reign (Evil 9 Mix)</li>
-            <li song="Breathe In You" cover="hyperion.jpg" artist="Tekara" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/10+Tekara+-+Breathe+In+You.mp3">Tekara - Breathe In You</li>
-            <li song="Nothing Left (Tsunami One Remix)" cover="hyperion.jpg" artist="Orbital" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/11+Orbital+-+Nothing+Left+(Tsunami+One+Remix).mp3">Orbital - Nothing Left (Tsunami One Remix)</li>
-            <li song="Eye For An Eye" cover="hyperion.jpg" artist="Unkle" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/12+Unkle+-+Eye+For+An+Eye.mp3">Unkle - Eye For An Eye</li>
-            <li song="Summer Breeze" cover="hyperion.jpg" artist="Free Radicals" link="https://s3-us-west-1.amazonaws.com/steven2me.com/hyperion/13+Free+Radicals+-+Summer+Breeze.mp3">Free Radicals - Summer Breeze</li>
-          </ul>
-                    
-          <div id="audio-player-hyperion">
-          </div>
-        </div>
-
-
-        <!-- DARK MATTER TRACKS AND AUDIO ################################################################################ -->
-
-        
-        <div class="medium-4 columns">
-          <h4>DARK MATTER - 2009</h4>
-          <!-- <h5>Progressive House</h5> -->
-          <img id="dark-matter-image" class="playlist-image" src="https://s3-us-west-1.amazonaws.com/steven2me.com/Images/dark-matter.jpg" class="thumbnail" alt="dark-matter">
-          
-          <ul id="dark-matter-playlist">
-            <li song="One Love (Extended Version)" cover="" artist="David Guetta feat. Estelle" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/01.+David+Guetta+feat.+Estelle+-+One+Love+(Extended+Version).mp3">David Guetta feat. Estelle - One Love (Extended Version)</li>
-            <li song="Leave The World Behind" cover="" artist="Laidback Luke, Sebastian Ingrosso, Axwell, Steve Angello" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/02.+Laidback+Luke%2C+Sebastian+Ingrosso%2C+Axwell%2C+Steve+Angello+-+Leave+The+World+Behind.mp3">Laidback Luke, Sebastian Ingrosso, Axwell, Steve Angello - Leave The World Behind</li>
-            <li song="Stay Around (For This) (Paul Harris Remix)" cover="" artist="Milk & Sugar, MS2" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/03.+Milk+%26+Sugar%2C+MS2+-+Stay+Around+(For+This)+(Paul+Harris+Remix).mp3">Milk & Sugar, MS2 - Stay Around (For This) (Paul Harris Remix)</li>
-            <li song="Counting Down The Days (Axwell Remix)" cover="" artist="Sunfreakz feat. Andrea Britton" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/04.+Sunfreakz+feat.+Andrea+Britton+-+Counting+Down+The+Days+(Axwell+Remix).mp3">Sunfreakz feat. Andrea Britton - Counting Down The Days (Axwell Remix)</li>
-            <li song="Watch The Apocalypse (Axwell Bootleg)" cover="" artist="Arno Cost vs. Axwell" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/05.+Arno+Cost+vs.+Axwell+-+Watch+The+Apocalypse+(Axwell+Bootleg).mp3">Arno Cost vs. Axwell - Watch The Apocalypse (Axwell Bootleg)</li>
-            <li song="Evouh" cover="" artist="Pryda" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/06.+Pryda+%E2%80%93+Evouh.mp3">Pryda – Evouh</li>
-            <li song="Pjanoo (Fred Falke Mix)" cover="" artist="Eric Prydz" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/07.+Eric+Prydz+-+Pjanoo+(Fred+Falke+Mix).mp3">Eric Prydz - Pjanoo (Fred Falke Mix)</li>
-            <li song="Wakanpi" cover="" artist="Pryda" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/08.+Pryda+%E2%80%93+Wakanpi.mp3">Pryda – Wakanpi</li>
-            <li song="Cosmic Flight" cover="" artist="Glenn Morrison" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/09.+Glenn+Morrison+-+Cosmic+Flight.mp3">Glenn Morrison - Cosmic Flight</li>
-            <li song="Move For Me (Rasmus Faber Epic Mix)" cover="" artist="Kaskade Feat Deadmau5" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/10.+Kaskade+Feat+Deadmau5+-+Move+For+Me+(Rasmus+Faber+Epic+Mix).mp3">Kaskade Feat Deadmau5 - Move For Me (Rasmus Faber Epic Mix)</li>
-            <li song="The Longest Road (Deadmau5 Dub)" cover="" artist="Morgan Page feat Lissie" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/11.+Morgan+Page+feat+Lissie+-+The+Longest+Road+(Deadmau5+Dub).mp3">Morgan Page feat Lissie - The Longest Road (Deadmau5 Dub)</li>
-            <li song="Last Forever (Original Extended)" cover="" artist="Norman Doray & Tristan Garner" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/12.+Norman+Doray+%26+Tristan+Garner+-+Last+Forever+(Original+Extended).mp3">Norman Doray & Tristan Garner - Last Forever (Original Extended)</li>
-            <li song="Just Because (Thomas Gold Club Mix)" cover="" artist="Thomas Gold Feat. Amanda Wilson" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/13.+Thomas+Gold+Feat.+Amanda+Wilson+-+Just+Because+(Thomas+Gold+Club+Mix).mp3">Thomas Gold Feat. Amanda Wilson - Just Because (Thomas Gold Club Mix)</li>
-            <li song="Slip" cover="" artist="Deadmau5" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DarkMatter/14.+Deadmau5+%E2%80%93+Slip.mp3">Deadmau5 – Slip</li>
-          </ul>
-
-          <div id="audio-player-dark-matter">   
+              <div id="audio-info">
+                <h5><span class="artist"></span></h5>
+                <h6><span class="song"></span></h6>
+              </div>
+              
+              <div id="time-tracker">
+                <div id="tracker" class="small-10 columns">
+                  <div class="">
+                    <div id="progressbar">
+                      <span id="progress"></span>
+                    </div>
+                  </div>                  
+                </div>
+                <div id="duration-shell" class="small-2 columns">
+                  <span id="duration"></span>
+                </div>
+              </div>     
+            </div>               
           </div>
 
-        </div>
-
-
-        <!-- TO SUNRISE TRACKS AND AUDIO ################################################################################ -->
-
-
-        <div class="medium-4 columns">
-          <h4>TO SUNRISE - 2008</h4>
-          <img id="to sunrise-image" class="playlist-image" src="https://s3-us-west-1.amazonaws.com/steven2me.com/Images/to-sunrise.jpg" class="thumbnail" alt="to-sunrise">
-           <ul id="to-sunrise-playlist">
-            <li song="Ghosts N Stuff" cover="" artist="Deadmau5" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/01_Deadmau5_GhostsNStuff.mp3">Deadmau5 - Ghosts N Stuff</li>
-            <li song="Release Me (TV Rock Edit)" cover="" artist="Zoe Badwi" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/02_ZoeBadwi_ReleaseMe(TVRockEdit).mp3">Zoe Badwi - Release Me (TV Rock Edit)</li>
-            <li song="Hands Up (Yer Man)" cover="" artist="Out Of Office" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/03_OutOfOffice_HandsUp(YerMan).mp3">Out Of Office - Release Me (TV Rock Edit)</li>
-            <li song="Stand Up" cover="" artist="Dewey Bullock, Latanza Waters, Mobin Master & Victor Mitchell" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/04_StandUp_MobinMaster.mp3">Dewey Bullock, Latanza Waters, Mobin Master & Victor Mitchell - Stand Up</li>
-            <li song="Better Day (Adam K & Addy Remix)" cover="" artist="Dirty South & Paul Harris" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/05_DirtySouth%26PaulHarris_BetterDay(AdamK%26AddyRemix).mp3">Dirty South & Paul Harris - Better Day (Adam K & Addy Remix)</li>
-            <li song="Me And Myself (Wolfgang Gartner Remix)" cover="" artist="Ben DJ Feat. Sushy" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/06_BenDJ_MeAndMyself.mp3">Ben DJ Feat. Sushy - Me And Myself (Wolfgang Gartner Remix)</li>
-            <li song="Montezuma" cover="" artist="Wolfgang Gartner" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/07_WolfgangGartner_Montezuma.mp3">Wolfgang Gartner - Montezuma</li>
-            <li song="Always The Sun" cover="" artist="The Stranglers" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/08_TheStranglers_AlwaysTheSun.mp3">The Stranglers - Always The Sun</li>
-            <li song="Take Me There (Extended Mix)" cover="" artist="Kim Jofferey & Natalie Konan" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/09_KimJofferey_TakeMeThere.mp3">Kim Jofferey & Natalie Konan - Take Me There (Extended Mix)</li>
-            <li song="Make You Whole (TV Rock Mix)" cover="" artist="Stockholm Syndrome" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/10_StockholmSyndrome_MakeYouWhole.mp3">Stockholm Syndrome - Make You Whole (TV Rock Mix)</li>
-            <li song="Higher (Extended Mix)" cover="" artist="Abel Ramos" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/11_AbelRamos_Higher.mp3">Abel Ramos - Higher (Extended Mix)</li>
-            <li song="Phunk (Steve Angello Re-Edit)" cover="" artist="Innersphere AKA Shinedoe" link="https://s3-us-west-1.amazonaws.com/steven2me.com/ToSunrise/12_Innersphere_Phunk.mp3">Innersphere AKA Shinedoe - Phunk (Steve Angello Re-Edit)</li>
-            <li song="" cover="" artist="" link=""></li>
-            <li song="" cover="" artist="" link=""></li>
-            <li song="" cover="" artist="" link=""></li>
-            <li song="" cover="" artist="" link=""></li>
+        <div id="playlist-button">
+          <div class="pull-me button"><h5>Playlist</h5></div>
+          <ul id="playlist">
           </ul>
-
-          <div id="audio-player-to-sunrise">   
-          </div>
-
+          <hr>
         </div>
       </div>
     </div>
 
+  <!-- DNB TRACKS ################################################################################ -->
 
-  <!--AUDIO PLAYER ################################################################################ -->
+      <div class="small-7 small-offset-1 columns">
+        <div id="dnb-tracks">
+          <table class="stack unstriped hover">
+            <thead>
+              <tr>
+                <th>Artist</th>
+                <th>Track</th>
+                <!-- <th>Add</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>Junkie XL</td>
+                <td>Chronicles Of Riddick - Dark Fury Jungle</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="End Title Of Chronicles Of Riddick Dark Fury" artist="Junkie XL" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Junkie+Xl+-+End+Title+Of+Chronicles+Of+Riddick+Dark+Fury+(10).mp3">
+                      <div class="small-11 columns">Junkie Xl - End Title Of Chronicles Of Riddick Dark Fury</div>
+                      <div class="small-1 columns end"><a class="button blue track-close" href=""><i class="fa fa-window-close fa right"></i></a></div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>LTJ Bukem</td>
+                <td>Words 2b Heard Meets Ad-Ill (Planet Invasion)</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="Words 2b Heard Meets Ad-Ill (Planet Invasion)" artist="LTJ Bukem" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/LTJ+Bukem+-+Words+2b+Heard+Meets+Ad-Ill+(Planet+Invasion)+-+con-quest+(10).mp3">
+                      <div class="small-11 columns">LTJ Bukem - Words 2b Heard Meets Ad-Ill (Planet Invasion)</div>
+                      <div class="small-1 columns end"><a class="button blue right" href=""><i class="fa fa-window-close fa right"></i></a></div>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
 
 
-    <div id="audio-player-push">  
-      <div class="row">
-        <div id="audio-player">
-          
-          <!-- <input id="volume" type="range" min="0" max="10" value="5"> -->
-          <div class="clearfix"></div> 
+              <tr>
+                <td>Black Sun Empire</td>
+                <td>The Sun VIP</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="The Sun VIP" artist="Black Sun Empire" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Black+Sun+Empire+-+The+Sun+VIP+(10).mp3">Black Sun Empire - The Sun VIP</li>
+                  </ul>
+                </td>
+              </tr>
 
-          <div class="row clear clarfix">
-            <div class="small-12 columns">
-              <div class="slider" data-slider data-initial-start="5" data-end="10">
-                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
-                <span class="slider-fill" data-slider-fill></span>
-                <input id="volume" type="hidden" min="0" max="10" value="5">
-              </div>
-            </div>
-          </div>
+              <tr>
+                <td>Calibre</td>
+                <td>Enigma Break Remix</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="Enigma Break Remix" artist="Calibre" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Calibre+-+Enigma+Break+Remix+(10).mp3">Calibre - Enigma Break Remix</li>
+                  </ul>
+                </td>
+              </tr>
 
-          <div class="row">
-            <div class="expanded button-group">
-              <a id="prev" class="button"><i class="fa fa-fast-backward fa-2x"></i></a>
-              <a id="play" class="button"><i class="fa fa-play fa-2x"></i></a>
-              <a id="pause" class="button"><i class="fa fa-pause fa-2x"></i></a>
-              <a id="stop" class="button"><i class="fa fa-stop fa-2x"></i></a>
-              <a id="next" class="button"><i class="fa fa-fast-forward fa-2x"></i></a>
-            </div>
-          </div>
+              <tr>
+                <td>Cytech And The Green Man</td>
+                <td>Collision</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li song="Collision" artist="Cytech And The Green Man" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Cytech+And+The+Green+Man+-+Collision+(10%2B).mp3">Cytech And The Green Man - Collision</li>
+                  </ul>
+                </td>
+              </tr>
 
-          <div id="audio-info">
-            <h5><span class="artist"></span></h5>
-            <h6><span class="song"></span></h6>
-          </div>
-          
-          <div id="time-tracker">
-            <div id="tracker" class="small-10 columns">
-              <div class="">
-                <div id="progressbar">
-                  <span id="progress"></span>
-                </div>
-              </div>                  
-            </div>
-            <div id="duration-shell" class="small-2 columns">
-              <span id="duration"></span>
-            </div>
-          </div>     
-        </div>               
+              <tr>
+                <td>DJ Crystl</td>
+                <td>Mindgames</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Mindgames+(10).mp3">DJ Crystl - Mindgames</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>DJ Crystl</td>
+                <td>Paradise</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="Paradise" artist="DJ Crystl" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Paradise+(10).mp3">DJ Crystl - Paradise</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Funk Parlor</td>
+                <td>Something For the DanceFloor ( Staka & Skynet Remix)</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="Something For the DanceFloor ( Staka & Skynet Remix)" artist="Funk Parlor" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Funk+Parlor+-+Something+For+the+DanceFloor+(+Staka+%26+Skynet+Remix)+(9).mp3">Funk Parlor - Something For the DanceFloor ( Staka & Skynet Remix)</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>J-Laze</td>
+                <td>Virtual Realmz (John B Epic Remix) (10).mp3</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="Virtual Realmz (John B Epic Remix) (10).mp3" artist="J-Laze" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/J-Laze+-+Virtual+Realmz+(John+B+Epic+Remix)+(10).mp3">J-Laze - Virtual Realmz (John B Epic Remix) (10).mp3</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>La Roux</td>
+                <td>In For The Killl (Skreams Let's Get Ravey remix)</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="La Roux" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/La+Roux+-+In+For+The+Killl+(Skreams+Let%27s+Get+Ravey+remix)(9).mp3">La Roux - In For The Killl (Skreams Let's Get Ravey remix)</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Logistics</td>
+                <td>Sendai Song</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="Logistics" link="">Logistics - Sendai Song</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Two</td>
+                <td>Two</td>
+                <td class="center">
+                  <button class="hollow button dnb-track" type="button">Add</button>
+                  <ul class="hidden">
+                    <li class="row" song="" artist="" link=""></li>
+                  </ul>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <div id="playlist-button">
-        <div class="pull-me button"><h5>Playlist</h5></div>
-        <ul id="playlist">
-        </ul>
-      </div>
-    </div> 
+
+
+    </div>
   </div>
 
 
@@ -243,32 +359,44 @@
   <!-- FOOTER SECTION ################################################################################ -->
 
   
-  <div id="footer" class="row">
-    <hr>
-    <div class="small-6 columns">
-      <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved<a href="#"></a></p>
+  <div id="footer">
+    <div class="row">
+      <hr>
+      <div class="small-5 columns small-offset-1">
+        <p class="fl_left">Copyright &copy; 2017 - All Rights Reserved<a href="#"></a></p>
+      </div>
+
+      <div id="social-media" class="small-5 columns end">
+        <ul class="right">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+          <!-- <li><a class="faicon-tumblr" href="#"><i class="fa fa-tumblr"></i></a></li> -->
+        </ul>
+      </div>
+
     </div>
 
-    <div id="social-media" class="small-6 columns">
-      <ul class="right">
-        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-        <!-- <li><a class="faicon-tumblr" href="#"><i class="fa fa-tumblr"></i></a></li> -->
-      </ul>
-    </div>
+<!--     <div class="row">
+      <div class="small-11 columns"></div>
+      <div class="small-1 columns">
+        <a id="backtotop" href=".top"><i class="fa fa-chevron-up fa-2x right"></i></a>
+      </div>
+    </div> -->
+
+
   </div>
 
 
 <!-- SCRIPTS ########################################################################################## -->
-  <div class="row">
+  <!-- <div class="row">
     <div class="small-11 columns"></div>
     <div class="small-1 columns">
       <a id="backtotop" href=".top"><i class="fa fa-chevron-up fa-2x right"></i></a>
     </div>
-  </div>
+  </div> -->
 
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="https://use.fontawesome.com/cca436f9dd.js"></script>

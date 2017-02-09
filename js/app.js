@@ -1,20 +1,14 @@
 $(document).foundation();
 
 
-
 // MIXES SECTION ################################################################################
 
-// Hide Playlists, dim images and hide audio player
-// $('#hyperion-playlist').hide();
-/*$('#audio-player-hyperion').hide();*/
-// $('#dark-matter-playlist').hide();
-/*$('#audio-player-dark-matter').hide();*/
-// $('#to-sunrise-playlist').hide();
-/*$('#audio-player-to-sunrise').hide();*/
+
 $('#audio-player-push').hide();
 $('#playlist').hide();
-// $('#mixes img').fadeTo('fast',0.5);
 $('#pause').hide();
+$('.hidden').hide();
+$('#duration').html('0.00');
 
 
 // Cover highlight when hover
@@ -26,12 +20,9 @@ $('#mixes img').mouseleave(function() {
 });
 
 
-
 // AUDIO PLAYER SECTION ################################################################################
 
-
 var audio;
-
 
 //Hide Pause Initially
 $('#pause').hide();
@@ -73,21 +64,25 @@ function initAudio(element){
 	element.addClass('active');
 }
 
+
+//Connect to Song Link
 function setAudio(link) {
 	audio = new Audio(link);
 	return audio;
 }
 
+
+//Click Image to connect track meta-data
 $('.playlist-image').on("click",function(e){
 	//e.preventDefault();
 	playlist = $(this).next('ul').html();
-	console.log(playlist);
 	player = $(this).siblings('div').attr('id');
-	//console.log(playlist);
 	//console.log(player);
 	loadPlaylist(playlist, player);
 });
 
+
+//Loads playlist
 function loadPlaylist(playlist, player){
 	$('#playlist').html(playlist);
 	loadPlayer(player);
@@ -108,8 +103,6 @@ function playTracks() {
 }
 
 
-
-
 //Play Button
 $('body').on('click', '#play', function(e){
 	//e.preventDefault();
@@ -121,6 +114,7 @@ $('body').on('click', '#play', function(e){
 	showDuration();
 });
 
+
 //Pause Button
 $('body').on('click', '#pause', function(e){
 	//e.preventDefault();
@@ -129,6 +123,7 @@ $('body').on('click', '#pause', function(e){
 	$('#pause').hide();
 	$('#play').show();
 });
+
 
 //Stop Button
 $('body').on('click', '#stop', function(e){
@@ -141,6 +136,7 @@ $('body').on('click', '#stop', function(e){
 	$('#play').show();
 	$('#duration').fadeOut(400);
 });
+
 
 //Next Button
 $('body').on('click', '#next', function(){
@@ -156,6 +152,7 @@ $('body').on('click', '#next', function(){
 	$('#pause').show();
 });
 
+
 //Prev Button
 $('body').on('click', '#prev', function(){
 	audio.pause();
@@ -170,6 +167,7 @@ $('body').on('click', '#prev', function(){
 	$('#pause').show();
 });
 
+
 //Playlist Song Click
 // $('#playlist li').click(function () {
 $('body').on('click', '#playlist li', function(){
@@ -182,13 +180,8 @@ $('body').on('click', '#playlist li', function(){
 	showDuration();
 });
 
-//Volume Control
-/*$('#volume').change(function(){
-	console.log('changed');
-	value = $(this).val();
-	audio.volume = parseFloat(value / 10);
-});*/
 
+//Volume Control
 $('.slider').on('moved.zf.slider', function() {	
 	volume = $('#volume').val();
 	audio.volume = parseFloat(volume / 10);
@@ -216,11 +209,10 @@ function showDuration(){
 
 //Dropdown Menu
 $('.pull-me').click(function(){
-	// $('#playlist-dropdown').addClass("pull-me");
 	$('#playlist').slideToggle('slow');
 });
 
-// Progress Bar Select
+//Progress Bar Select
 $("#progressbar").mouseup(function(e){
     var leftOffset = e.pageX - $(this).offset().left;
     var songPercents = leftOffset / $('#progressbar').width();
@@ -238,3 +230,45 @@ $(audio).on("ended",function(){
  	audio.play();
 	showDuration();
 });﻿
+
+
+// INDIVIDUAL TRACK SECTION ################################################################################
+
+
+$(".dnb-track").on("click",function(e){
+	$('#playlist').show();
+	 track = $(this).next('ul').html();
+	loadPlaylist1(track);
+	$('#playlist').show();
+});
+
+function loadPlaylist1(playlist){
+	$('#playlist').append(track);
+	//if ($("#playlist".length == 0)){}
+	console.log($('#playlist-button li.length'));
+	playTracks1();
+};
+
+function playTracks1() {
+	initAudio($('#playlist li:first-child'));
+	audio.play();
+	showDuration();
+	$('#play').hide();
+	$('#pause').show();
+}
+
+
+// $('.track-close').on('click', function(){
+//  	$(this).next('li').empty();
+// });
+
+// $('#playlist').on('click', 'li', function(){
+// 	$(this).remove();
+// });
+
+
+
+
+
+
+
