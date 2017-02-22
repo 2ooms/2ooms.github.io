@@ -41,7 +41,7 @@ function initAudio(element){
 	// audio = new Audio('media/' + song);
 
 	if(typeof(audio) != 'object') {
-		console.log('setting audio');
+		// console.log('setting audio');
 		audio = setAudio(link);
 	}
 	audio.pause();
@@ -106,7 +106,6 @@ function playTracks() {
 //Play Button
 $('body').on('click', '#play', function(e){
 	//e.preventDefault();
-	console.log($(this));
 	audio.play();
 	$('#play').hide();
 	$('#pause').show();
@@ -118,7 +117,6 @@ $('body').on('click', '#play', function(e){
 //Pause Button
 $('body').on('click', '#pause', function(e){
 	//e.preventDefault();
-	console.log($(this));
 	audio.pause();
 	$('#pause').hide();
 	$('#play').show();
@@ -128,7 +126,6 @@ $('body').on('click', '#pause', function(e){
 //Stop Button
 $('body').on('click', '#stop', function(e){
 	//e.preventDefault();
-	console.log($(this));
 	audio.pause();
 	// audio.currentTime = 0;
 	initAudio($('#playlist li:first-child'));
@@ -170,7 +167,7 @@ $('body').on('click', '#prev', function(){
 
 //Playlist Song Click
 // $('#playlist li').click(function () {
-$('body').on('click', '#playlist li', function(){
+$('body').on('click', '#mixes #playlist li', function(){
     audio.pause();
     initAudio($(this));
 	$('#play').hide();
@@ -236,27 +233,43 @@ $(audio).on("ended",function(){
 
 
 $(".dnb-track").on("click",function(e){
-	$('#playlist').show();
-	 track = $(this).next('ul').html();
+	track = $(this).next('ul').html();
 	loadPlaylist1(track);
 	$('#playlist').show();
+	$(this).hide();
 });
 
 function loadPlaylist1(playlist){
 	$('#playlist').append(track);
-	//if ($("#playlist".length == 0)){}
-	console.log($('#playlist-button li.length'));
+	// console.log($('#playlist-button li.length'));
 	playTracks1();
 };
 
 function playTracks1() {
-	initAudio($('#playlist li:first-child'));
-	audio.play();
-	showDuration();
-	$('#play').hide();
-	$('#pause').show();
+	if($("#playlist li").length == 1){
+		initAudio($('#playlist li:first-child'));
+		audio.play();
+		showDuration();
+		$('#play').hide();
+		$('#pause').show();
+	}
 }
 
+$('body').on('click', '#drumnbass #playlist li .track-select', function(){
+    audio.pause();
+    initAudio($(this).parent('li'));
+	$('#play').hide();
+	$('#pause').show();
+	$('#duration').fadeIn(400);
+	audio.play();
+	showDuration();
+});
+
+$('body').on('click', '.remove-button', function(){
+	console.log($(this).parent('ul'));
+	$(this).parent('li').remove();
+	// $('.dnb-track').show();
+})
 
 // $('.track-close').on('click', function(){
 //  	$(this).next('li').empty();
@@ -265,7 +278,6 @@ function playTracks1() {
 // $('#playlist').on('click', 'li', function(){
 // 	$(this).remove();
 // });
-
 
 
 

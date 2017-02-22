@@ -76,10 +76,10 @@
   <!-- MAIN SECTION ################################################################################ -->
 
   <div class="main">
-    <div class="row drumnbass">
-    <section>
-      <h1>DrumNBass</h1>
-    </section>
+    <div class="row" id="drumnbass">
+      <section>
+        <h1>DrumNBass</h1>
+      </section>
   
   <!--AUDIO PLAYER ################################################################################ -->
 
@@ -127,14 +127,14 @@
             </div>               
           </div>
 
-        <div id="playlist-button">
-          <div class="pull-me button"><h5>Playlist</h5></div>
-          <ul id="playlist">
-          </ul>
-          <hr>
+          <div id="playlist-button">
+            <div class="pull-me button"><h5>Playlist</h5></div>
+            <ul id="playlist">
+            </ul>
+            <hr>
+          </div>
         </div>
       </div>
-    </div>
 
   <!-- DNB TRACKS ################################################################################ -->
 
@@ -145,7 +145,7 @@
               <tr>
                 <th>Artist</th>
                 <th>Track</th>
-                <!-- <th>Add</th> -->
+                <th>Add</th>
               </tr>
             </thead>
             <tbody>
@@ -156,9 +156,9 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="End Title Of Chronicles Of Riddick Dark Fury" artist="Junkie XL" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Junkie+Xl+-+End+Title+Of+Chronicles+Of+Riddick+Dark+Fury+(10).mp3">
-                      <div class="small-11 columns">Junkie Xl - End Title Of Chronicles Of Riddick Dark Fury</div>
-                      <div class="small-1 columns end"><a class="button blue track-close" href=""><i class="fa fa-window-close fa right"></i></a></div>
+                    <li id="dnb1" class="row" song="End Title Of Chronicles Of Riddick Dark Fury" artist="Junkie XL" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Junkie+Xl+-+End+Title+Of+Chronicles+Of+Riddick+Dark+Fury+(10).mp3">
+                      <div class="small-11 columns track-select">Junkie Xl - End Title Of Chronicles Of Riddick Dark Fury</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>     
                     </li>
                   </ul>
                 </td>
@@ -170,22 +170,24 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="Words 2b Heard Meets Ad-Ill (Planet Invasion)" artist="LTJ Bukem" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/LTJ+Bukem+-+Words+2b+Heard+Meets+Ad-Ill+(Planet+Invasion)+-+con-quest+(10).mp3">
-                      <div class="small-11 columns">LTJ Bukem - Words 2b Heard Meets Ad-Ill (Planet Invasion)</div>
-                      <div class="small-1 columns end"><a class="button blue right" href=""><i class="fa fa-window-close fa right"></i></a></div>
+                    <li id="dnb2" class="row" song="Words 2b Heard Meets Ad-Ill (Planet Invasion)" artist="LTJ Bukem" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/LTJ+Bukem+-+Words+2b+Heard+Meets+Ad-Ill+(Planet+Invasion)+-+con-quest+(10).mp3">
+                      <div class="small-11 columns track-select">LTJ Bukem - Words 2b Heard Meets Ad-Ill (Planet Invasion)</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
                     </li>
                   </ul>
                 </td>
               </tr>
 
-
-              <tr>
+              <tr id="dnb3">
                 <td>Black Sun Empire</td>
                 <td>The Sun VIP</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="The Sun VIP" artist="Black Sun Empire" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Black+Sun+Empire+-+The+Sun+VIP+(10).mp3">Black Sun Empire - The Sun VIP</li>
+                    <li class="row" song="The Sun VIP" artist="Black Sun Empire" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Black+Sun+Empire+-+The+Sun+VIP+(10).mp3">
+                      <div class="small-11 columns track-select">Black Sun Empire - The Sun VIP</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -196,7 +198,10 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="Enigma Break Remix" artist="Calibre" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Calibre+-+Enigma+Break+Remix+(10).mp3">Calibre - Enigma Break Remix</li>
+                    <li class="row" song="Enigma Break Remix" artist="Calibre" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Calibre+-+Enigma+Break+Remix+(10).mp3">
+                      <div class="small-11 columns track-select">Calibre - Enigma Break Remix</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -207,7 +212,10 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li song="Collision" artist="Cytech And The Green Man" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Cytech+And+The+Green+Man+-+Collision+(10%2B).mp3">Cytech And The Green Man - Collision</li>
+                    <li class="row" song="Collision" artist="Cytech And The Green Man" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Cytech+And+The+Green+Man+-+Collision+(10%2B).mp3">
+                      <div class="small-11 columns track-select">Cytech And The Green Man - Collision</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -218,7 +226,10 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Mindgames+(10).mp3">DJ Crystl - Mindgames</li>
+                    <li class="row" song="" artist="" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Mindgames+(10).mp3">
+                      <div class="small-11 columns track-select">DJ Crystl - Mindgames</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -229,18 +240,24 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="Paradise" artist="DJ Crystl" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Paradise+(10).mp3">DJ Crystl - Paradise</li>
+                    <li class="row" song="Paradise" artist="DJ Crystl" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/DJ+Crystl+-+Paradise+(10).mp3">
+                      <div class="small-11 columns track-select">DJ Crystl - Paradise</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
                 <td>Funk Parlor</td>
-                <td>Something For the DanceFloor ( Staka & Skynet Remix)</td>
+                <td>Something For the DanceFloor (Staka & Skynet Remix)</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="Something For the DanceFloor ( Staka & Skynet Remix)" artist="Funk Parlor" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Funk+Parlor+-+Something+For+the+DanceFloor+(+Staka+%26+Skynet+Remix)+(9).mp3">Funk Parlor - Something For the DanceFloor ( Staka & Skynet Remix)</li>
+                    <li class="row" song="Something For the DanceFloor ( Staka & Skynet Remix)" artist="Funk Parlor" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Funk+Parlor+-+Something+For+the+DanceFloor+(+Staka+%26+Skynet+Remix)+(9).mp3">
+                      <div class="small-11 columns track-select">Funk Parlor - Something For the DanceFloor (Staka & Skynet Remix)</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -251,7 +268,10 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="Virtual Realmz (John B Epic Remix) (10).mp3" artist="J-Laze" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/J-Laze+-+Virtual+Realmz+(John+B+Epic+Remix)+(10).mp3">J-Laze - Virtual Realmz (John B Epic Remix) (10).mp3</li>
+                    <li class="row" song="Virtual Realmz (John B Epic Remix) (10).mp3" artist="J-Laze" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/J-Laze+-+Virtual+Realmz+(John+B+Epic+Remix)+(10).mp3">
+                      <div class="small-11 columns track-select">J-Laze - Virtual Realmz (John B Epic Remix).mp3</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -262,7 +282,10 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="La Roux" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/La+Roux+-+In+For+The+Killl+(Skreams+Let%27s+Get+Ravey+remix)(9).mp3">La Roux - In For The Killl (Skreams Let's Get Ravey remix)</li>
+                    <li class="row" song="" artist="La Roux" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/La+Roux+-+In+For+The+Killl+(Skreams+Let%27s+Get+Ravey+remix)(9).mp3">
+                      <div class="small-11 columns track-select">La Roux - In For The Killl (Skreams Let's Get Ravey remix)</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
@@ -273,73 +296,80 @@
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="Logistics" link="">Logistics - Sendai Song</li>
+                    <li class="row" song="" artist="Logistics" link="">
+                      <div class="small-11 columns track-select">Logistics - Sendai Song</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
-                <td>Two</td>
-                <td>Two</td>
+                <td>Luger</td>
+                <td>Pass Agent</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
+                    <li class="row" song="Pass Agent" artist="Luger" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Luger+-+Pass+Agent+(10).mp3">
+                      <div class="small-11 columns track-select">Luger - Pass Agent</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
-                <td>Two</td>
-                <td>Two</td>
+                <td>Nphect and Dizplay</td>
+                <td>Motor</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
+                    <li class="row" song="Motor" artist="Nphect and Dizplay" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Nphect+and+Dizplay+-+Motor+(10).mp3">
+                      <div class="small-11 columns track-select">Nphect and Dizplay - Motor</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
-                <td>Two</td>
-                <td>Two</td>
+                <td>Nu Moon</td>
+                <td>Too Right (Drumsound & Simon Bassline Smith Remix)</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
+                    <li class="row" song="Too Right (Drumsound & Simon Bassline Smith Remix)" artist="Nu Moon" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Nu+Moon+-+Too+Right+(Drumsound+%26+Simon+Bassline+Smith+Remix)+(10).mp3">
+                      <div class="small-11 columns track-select">Nu Moon - Too Right (Drumsound & Simon Bassline Smith Remix)</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
-                <td>Two</td>
-                <td>Two</td>
+                <td>PFM</td>
+                <td>Dannys Song</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
+                    <li class="row" song="Dannys Song" artist="PFM" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/PFM+-+Dannys+Song+(10).mp3">
+                      <div class="small-11 columns track-select">PFM - Dannys Song</div>
+                      <div class="small-1 columns end"><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
 
               <tr>
-                <td>Two</td>
-                <td>Two</td>
+                <td>Seba</td>
+                <td>Dangerous Days</td>
                 <td class="center">
                   <button class="hollow button dnb-track" type="button">Add</button>
                   <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
-                  </ul>
-                </td>
-              </tr>
-
-              <tr>
-                <td>Two</td>
-                <td>Two</td>
-                <td class="center">
-                  <button class="hollow button dnb-track" type="button">Add</button>
-                  <ul class="hidden">
-                    <li class="row" song="" artist="" link=""></li>
+                    <li class="row" song="Dangerous Days" artist="Seba" link="https://s3-us-west-1.amazonaws.com/steven2me.com/DnB/Seba+-+Dangerous+Days+(10).mp3">
+                      <div class="small-11 columns track-select">Seba - Dangerous Days</div>
+                      <div class="small-1 columns end "><button class="button blue right remove-button"><i class="fa fa-window-close fa"></i></button></div>
+                    </li>
                   </ul>
                 </td>
               </tr>
