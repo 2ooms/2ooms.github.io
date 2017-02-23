@@ -222,7 +222,7 @@ $(audio).on("ended",function(){
     var next = $('#playlist li.active').next();
     if (next.length == 0) {
         next = $('#playlist li:first-child');
-    }
+    };
     initAudio(next);
  	audio.play();
 	showDuration();
@@ -232,11 +232,12 @@ $(audio).on("ended",function(){
 // INDIVIDUAL TRACK SECTION ################################################################################
 
 
+// To Add Track #######################
 $(".dnb-track").on("click",function(e){
 	track = $(this).next('ul').html();
 	loadPlaylist1(track);
 	$('#playlist').show();
-	$(this).hide();
+	// $(this).hide();
 });
 
 function loadPlaylist1(playlist){
@@ -255,6 +256,7 @@ function playTracks1() {
 	}
 }
 
+// Select Track From Playlist #######################
 $('body').on('click', '#drumnbass #playlist li .track-select', function(){
     audio.pause();
     initAudio($(this).parent('li'));
@@ -265,20 +267,26 @@ $('body').on('click', '#drumnbass #playlist li .track-select', function(){
 	showDuration();
 });
 
+// Remove Track From Playlist #######################################################################
 $('body').on('click', '.remove-button', function(){
-	console.log($(this).parent('ul'));
-	$(this).parent('li').remove();
-	// $('.dnb-track').show();
-})
-
-// $('.track-close').on('click', function(){
-//  	$(this).next('li').empty();
-// });
-
-// $('#playlist').on('click', 'li', function(){
-// 	$(this).remove();
-// });
-
+		//if inactive #########################
+	if ($(this).parent('div').parent('li').hasClass("active")) {
+		audio.pause();
+		$(this).parent('div').parent('li').remove();
+		var next = $('#playlist li.active').next(); 
+		if (next.length == 0) {
+			next = $('#playlist li:first-child');
+		}
+		initAudio(next);
+		audio.play();
+		showDuration();
+		$('#play').hide();
+		$('#pause').show();
+	}
+	else {
+		$(this).parent('div').parent('li').remove();
+	};
+});
 
 
 

@@ -352,6 +352,9 @@ input#volume::-webkit-slider-thumb{
 /* DRUM AND BASE SECTION ############################################################################## */
 #drumnbass {
 	max-width: 978px;
+	.columns {
+		padding: 5px;
+	}
 	li {
 		font-size: 10px;
 		font-family:Verdana, Geneva, sans-serif;
@@ -425,6 +428,9 @@ input#volume::-webkit-slider-thumb{
 	}
 	#dnb-tracks {
 		margin-top: 20px;
+		h3 {
+			text-align: center;
+		}
 		thead, th, thead tr {
 			color: white;
 			text-align: center;
@@ -432,7 +438,7 @@ input#volume::-webkit-slider-thumb{
 		}
 		tr {
 			/*background-color: #1779ba;*/
-			color: #1779ba;
+			color: black;
 			ul {
 				margin: 0px;
 			}
