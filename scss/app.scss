@@ -112,7 +112,7 @@
 
 /* HERO SECTION ################################################################################ */
 
-.hero img {
+#hero img {
 	width: 100%;
 }
 
@@ -283,7 +283,7 @@ input#volume::-webkit-slider-thumb{
 	float: left;
 	box-sizing: content-box;
 	margin-bottom: 10px;
-	margin-top: 6px;
+	margin-top: 0rem;
 }
 
 #progress{
@@ -292,7 +292,6 @@ input#volume::-webkit-slider-thumb{
 	border-radius: 2px;
 	display: inline-block;
 	position: absolute;
-	/*margin-top: 6px;*/
 }
 
 #duration {
@@ -313,7 +312,6 @@ input#volume::-webkit-slider-thumb{
 		margin: auto;
 	    width:100px;
 		font-family:Verdana, Geneva, sans-serif;
-
 	    -moz-border-top-left-radius:5px;
 	    -moz-border-top-right-radius:5px;
 	    border-top-left-radius:5px;
@@ -353,7 +351,7 @@ input#volume::-webkit-slider-thumb{
 #drumnbass {
 	max-width: 978px;
 	.columns {
-		padding: 5px;
+		padding: 0rem;
 	}
 	li {
 		font-size: 10px;

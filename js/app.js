@@ -269,7 +269,7 @@ $('body').on('click', '#drumnbass #playlist li .track-select', function(){
 
 // Remove Track From Playlist #######################################################################
 $('body').on('click', '.remove-button', function(){
-		//if inactive #########################
+	//if active #########################
 	if ($(this).parent('div').parent('li').hasClass("active")) {
 		audio.pause();
 		$(this).parent('div').parent('li').remove();
