@@ -282,8 +282,7 @@ input#volume::-webkit-slider-thumb{
 	background-color: white;
 	float: left;
 	box-sizing: content-box;
-	margin-bottom: 10px;
-	margin-top: 0rem;
+	margin-top: 6px;
 }
 
 #progress{
@@ -375,6 +374,9 @@ input#volume::-webkit-slider-thumb{
 	#pause {
 		display: hidden;
 	}
+	#playlist-button {
+		display: hidden;
+	}
 	.slider-dnb .columns{
 		padding-left: 0px;
 		padding-right: 0px;
@@ -426,9 +428,6 @@ input#volume::-webkit-slider-thumb{
 	}
 	#dnb-tracks {
 		margin-top: 20px;
-		h3 {
-			text-align: center;
-		}
 		thead, th, thead tr {
 			color: white;
 			text-align: center;
@@ -447,6 +446,8 @@ input#volume::-webkit-slider-thumb{
 		td {
 			padding: 2px 4px;
 			font-size: 13px;
+			background-color: #e6e6e6;
+
 		}
 		button {
 			border-radius: 5px;

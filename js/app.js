@@ -62,6 +62,19 @@ function initAudio(element){
 	//Add active class to selected song
 	$('#playlist li').removeClass('active');
 	element.addClass('active');
+
+	//Play Next Track (Steff)
+	$(audio).on('ended', function(){
+     	// $('#next').trigger('click');
+     	audio.pause();
+	    var next = $('#playlist li.active').next();
+	    if (next.length == 0) {
+	        next = $('#playlist li:first-child');
+	    };
+	    initAudio(next);
+	 	audio.play();
+		showDuration();
+  	});
 }
 
 
@@ -216,17 +229,6 @@ $("#progressbar").mouseup(function(e){
 	audio.currentTime = songPercents * audio.duration;
 });﻿
 
-//Play Next Song
-$(audio).on("ended",function(){
-    audio.pause();
-    var next = $('#playlist li.active').next();
-    if (next.length == 0) {
-        next = $('#playlist li:first-child');
-    };
-    initAudio(next);
- 	audio.play();
-	showDuration();
-});﻿
 
 
 // INDIVIDUAL TRACK SECTION ################################################################################
@@ -237,6 +239,7 @@ $(".dnb-track").on("click",function(e){
 	track = $(this).next('ul').html();
 	loadPlaylist1(track);
 	$('#playlist').show();
+	$('.pull-me').show();
 	// $(this).hide();
 });
 
@@ -269,7 +272,6 @@ $('body').on('click', '#drumnbass #playlist li .track-select', function(){
 
 // Remove Track From Playlist #######################################################################
 $('body').on('click', '.remove-button', function(){
-	//if active #########################
 	if ($(this).parent('div').parent('li').hasClass("active")) {
 		audio.pause();
 		$(this).parent('div').parent('li').remove();
