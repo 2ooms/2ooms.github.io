@@ -290,6 +290,54 @@ $('body').on('click', '.remove-button', function(){
 	};
 });
 
+// Show / Hide Library Sections #######################################################################
+$('body').on('click', '#dnb-aggressive-button-show', function(){
+	$('#dnb-aggressive-list').show('slow');
+	$('#dnb-aggressive-button-show').hide();
+	$('#dnb-aggressive-button-hide').show();
+});
+$('body').on('click', '#dnb-aggressive-button-hide', function(){
+	$('#dnb-aggressive-list').hide('slow');
+	$('#dnb-aggressive-button-show').show();
+	$('#dnb-aggressive-button-hide').hide();
+});
+
+
+$('body').on('click', '#dnb-dark-button-show', function(){
+	$('#dnb-dark-list').show('slow');
+	$('#dnb-dark-button-show').hide();
+	$('#dnb-dark-button-hide').show();
+});
+$('body').on('click', '#dnb-dark-button-hide', function(){
+	$('#dnb-dark-list').hide('slow');
+	$('#dnb-dark-button-show').show();
+	$('#dnb-dark-button-hide').hide();
+});
+
+$('body').on('click', '#dnb-upbeat-button-show', function(){
+	$('#dnb-upbeat-list').show('slow');
+	$('#dnb-upbeat-button-show').hide();
+	$('#dnb-upbeat-button-hide').show();
+});
+$('body').on('click', '#dnb-upbeat-button-hide', function(){
+	$('#dnb-upbeat-list').hide('slow');
+	$('#dnb-upbeat-button-show').show();
+	$('#dnb-upbeat-button-hide').hide();
+});
+
+$('body').on('click', '#dnb-melodic-button-show', function(){
+	$('#dnb-melodic-list').show('slow');
+	$('#dnb-melodic-button-show').hide();
+	$('#dnb-melodic-button-hide').show();
+});
+$('body').on('click', '#dnb-melodic-button-hide', function(){
+	$('#dnb-melodic-list').hide('slow');
+	$('#dnb-melodic-button-show').show();
+	$('#dnb-melodic-button-hide').hide();
+});
+
+
+
 
 
 

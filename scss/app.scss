@@ -466,6 +466,15 @@ input#volume::-webkit-slider-thumb{
 		ul {
 			display: none;
 		}
+		h3 {
+			margin-left: 10px;
+		}
+		h3 .button {
+			border: 0px;
+			padding: 0px;
+			margin: 0 0 5px 0;
+			background-color: transparent;
+		}
 	}
 }
 
